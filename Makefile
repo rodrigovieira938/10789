@@ -1,15 +1,17 @@
-.PHONY: clean run build tools exercicio1
+EXERCICIOS = exercicio1 exercicio2
+.PHONY: clean run build tools $(EXERCICIOS)
 
 CC = gcc
 CFLAGS = -Wall -Wextra
-EXERCICIOS = exercicio1
 
-build: tools exercicio1
+build: tools $(EXERCICIOS)
 
 tools:
 	@cd tools && make build
 
 exercicio1:
+	@cd $@ && make build
+exercicio2:
 	@cd $@ && make build
 
 clean:

@@ -1,12 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int num = 0;
-    for(int i = 0; i < 10; i++) {
-        num+=2;
-        printf("Num = %d, i = %d", num, i);
-        printf("Aqui FOR");
-    }
+    int segundos;
+
+    printf("Introduza o tempo em segundos: ");
+    scanf("%d", &segundos);
+
+    int minutos = segundos / 60;
+    segundos %= 60;
+    int horas = minutos / 60;
+    minutos %= 60;
+
+    printf("O tempo é igual a %d:%d:%d\n", horas, minutos, segundos);
 
     return 0;
 }

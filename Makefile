@@ -1,4 +1,4 @@
-EXERCICIOS = exercicio1 exercicio2
+EXERCICIOS = exercicio1 exercicio2 exercicio3
 .PHONY: clean run build tools $(EXERCICIOS)
 
 CC = gcc
@@ -12,6 +12,8 @@ tools:
 exercicio1:
 	@cd $@ && make build
 exercicio2:
+	@cd $@ && make build
+exercicio3:
 	@cd $@ && make build
 
 clean:

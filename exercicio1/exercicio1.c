@@ -11,6 +11,8 @@ int main() {
     int horas = minutos / 60;
     minutos %= 60;
 
+    horas %= 24;
+
     printf("O tempo é igual a %d:%d:%d\n", horas, minutos, segundos);
 
     return 0;

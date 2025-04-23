@@ -21,6 +21,7 @@ def num_perfeitos(limite:int):
     return num
 num = int(input("Introduza um número: "))
 vezes = 0
+operacao = ""
 for i in range(num, 0, -1):
     if vezes % 10 == 0 and vezes != 0:
         res = input("Deseja continuar? S ou N: ")
@@ -32,8 +33,6 @@ for i in range(num, 0, -1):
     else:
         print("não é primo")
     vezes+=1
-
-operacao = ""
 while True:
     operacoes = "+-*/."
     print("Calculadora")

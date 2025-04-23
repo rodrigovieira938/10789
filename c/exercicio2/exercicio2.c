@@ -12,9 +12,8 @@ int min(int a, int b) {
 }
 
 int main() {
-    int num1;
-    int num2;
-    int num3;
+    int num1 = 0, num2 = 0, num3 = 0;
+    int max_num = 0, min_num = 0;
 
     printf("Introduza o primeiro número: ");
     scanf("%d", &num1);
@@ -23,8 +22,8 @@ int main() {
     printf("Introduza o terceiro número: ");
     scanf("%d", &num3);
 
-    int max_num = max(num3,max(num1,num2));
-    int min_num = min(num3,min(num1,num2));
+    max_num = max(num3,max(num1,num2));
+    min_num = min(num3,min(num1,num2));
 
     if(max_num == num1) {
         printf("O número máximo é o primeiro (%i)\n", max_num);

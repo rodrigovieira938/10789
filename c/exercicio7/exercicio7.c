@@ -9,16 +9,16 @@ int sum(int* arr, int lenght) {
 }
 
 int main() {
-    int notas[3];
+    int notas[3] = {0,0,0};
     int pesos[3] = {2,3,5};
     int pesos_sum = sum(pesos, 3);
+    int media = 0;
     printf("Introduza a primeira nota: ");
     scanf("%i", &notas[0]);
     printf("Introduza a segunda nota: ");
     scanf("%i", &notas[1]);
     printf("Introduza a terceira nota: ");
     scanf("%i", &notas[2]);
-    int media = 0;
     for(int i = 0; i < 3; i++) {
         media += notas[i] * pesos[i];
     }

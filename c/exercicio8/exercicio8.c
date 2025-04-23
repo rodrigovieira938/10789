@@ -17,7 +17,7 @@ int clamp(int min, int max, int n) {
 }
 
 int main() {
-    int notas[10];
+    int notas[10] = {0};
 
     for(int i = 0; i < 10; i++) {
         printf("Introduza a nota do aluno %i: ", i+1);

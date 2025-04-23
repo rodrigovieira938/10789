@@ -11,8 +11,8 @@ float get_desconto(float preco) {
 };
 
 int main() {
-    char nome[513];
-    float valor;
+    char nome[513] = "";
+    float valor = .0;
     printf("Introduze o nome do cliente: ");
     scanf("%[^\n]512s", nome);
     getchar();

@@ -13,8 +13,8 @@ int min(int a, int b) {
 
 
 int main() {
-    int num1;
-    int num2;
+    int num1 = 0, num2 = 0;
+    int max_num = 0, min_num = 0;
 
     printf("Introduze o primeiro número: ");
     scanf("%d", &num1);
@@ -22,29 +22,12 @@ int main() {
     printf("Introduze o segundo número: ");
     scanf("%d", &num2);
 
-    printf("Crescente:   ");
+    max_num = max(num1,num2);
+    min_num = min(num1,num2);
 
-    int max_number = max(num1, num2);
-    int min_number = min(num1, num2);
+    printf("Crescente: %d, %d\n", min_num, max_num);
 
-    for(int i = min_number; i <= max_number; i++) {
-        printf("%d",i);
-        if(i < max_number) {
-            printf("; ");
-        }
-    }
-    printf("\n");
-
-    printf("Descrecente: ");
-
-
-    for(int i = max_number; i >= min_number; i--) {
-        printf("%d",i);
-        if(i > min_number) {
-            printf("; ");
-        }
-    }
-    printf("\n");
+    printf("Descrecente: %d, %d\n", max_num, min_num);
 
     return 0;
 }

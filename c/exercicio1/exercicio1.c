@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int segundos;
+    int segundos = 0, minutos = 0, horas = 0;
 
     printf("Introduza o tempo em segundos: ");
     scanf("%d", &segundos);
 
-    int minutos = segundos / 60;
+    minutos = segundos / 60;
     segundos %= 60;
-    int horas = minutos / 60;
+    horas = minutos / 60;
     minutos %= 60;
 
     horas %= 24;

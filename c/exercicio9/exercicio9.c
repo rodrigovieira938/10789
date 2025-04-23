@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int mes;
+    int mes = 0;
     printf("Introduza o mês(1-12): ");
     scanf("%i", &mes);
 

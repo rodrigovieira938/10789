@@ -1,6 +1,6 @@
 pares = []
 impares = []
-for i in range(1, 31):
+for i in range(1, 61):
     if i % 2 == 0:
         pares.append(i)
     else:
